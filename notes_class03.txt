@@ -1,0 +1,235 @@
+for loop:
+
+let json = [{
+    "id" : "1", 
+    "msg"   : "hi",
+    "tid" : "2013-05-05 23:35",
+    "fromWho": "hello1@email.se"
+},
+{
+    "id" : "2", 
+    "msg"   : "there",
+    "tid" : "2013-05-05 23:45",
+    "fromWho": "hello2@email.se"
+}];
+
+for(let i = 0; i < json.length; i++) {
+    let obj = json[i];
+
+    console.log(obj.id);
+}
+-----------------------------------------------------------------
+for in loop:
+
+for (var key in data) {
+   if (data.hasOwnProperty(key)) {
+      console.log(data[key].id);
+   }
+}
+
+-----------------------------------------------------------------
+forEach loop:
+
+json.forEach((item) => {
+  console.log('ID: ' + item.id);
+  console.log('MSG: ' + item.msg);
+  console.log('TID: ' + item.tid);
+  console.log('FROMWHO: ' + item.fromWho);
+});
+-----------------------------------------------------------------
+forOf loop:
+
+var mycars = [{name:'Susita'}, {name:'BMW'}];
+
+for (var car of mycars) 
+{
+  console.log(car.name + "<br />");
+}
+-----------------------------------------------------------------
+
+{
+	"RESUME": [{
+			"name": "M.Vigneshwar",
+			"image": "",
+			"ph-no": "852687001",
+			"e-mail": "vigneshmenon2303@gmail.com",
+			"address": {
+				"door no": "3/5",
+				"area": "krms Garden",
+				"locality": "sulur",
+				"district": "coimbatore",
+				"pin-code": "641-402",
+				"state": "Tamil-Nadu"
+			},
+			"obejective": [{
+				"objective": "To work in my environment with encourages me to succeed and grow professionally where i can use utilize my skills and knowledge appropriately "
+			}]
+		},
+		{
+			"Education": [{
+					"university": "Anna University",
+					"graduation": "BE Mechanical Engineering",
+					"academic year": "2014 - 2018",
+					"percentage": "65.6%"
+				},
+				{
+					"board": "State Board",
+					"class": "HSC",
+					"academic year": "2013 - 2014",
+					"percentage": "69.8%"
+				},
+				{
+					"board": "State Board",
+					"class": "SSLC",
+					"academic year": "2012 - 2013",
+					"percentage": "81.3%"
+				}
+			],
+			"skills": [{
+				"management": "team management",
+				"development": "problem solving"
+			}],
+			"Achievements & Awards": [{
+				"achivement": "overall champion in the intra-collegiate meet and also i am the 1st active member in NSS in my school time"
+			}],
+			"communication skills": {
+				"Tamil": "read,write,speak",
+				"English": "read,write,speak",
+				"Malayalam": "read,write,speak",
+				"Hindi": "speak"
+			},
+			"areas of interests": [{
+				"industry": "manufacturing technologies",
+				"industries": "automobile engineering",
+				"information technology": "full stack development"
+			}],
+			"personal profile": [{
+				"name": "M.Vigneshwar",
+				"dob": "23-03-1996",
+				"father's name": "Manikandan",
+				"mother's name": "savithri",
+				"gender": "male",
+				"nationality": "Indian",
+				"personal skills": "Self-confidence,Team worker"
+			}],
+			"Acknowledgement": "i am here by declared that all the information provided is true to the best of my knowledge "
+		},
+
+		{
+			"place": "sulur",
+			"date": "28-09-2022"
+		},
+
+		{
+			"yours truely": "signature"
+
+		}
+	]
+}
+
+---------------------------------------------------------------------------------------------------------------------
+{
+	"RESUME": [{
+				"name": "vigneshwar",
+				"email": "vigneshmenon2303 @gmail.com",
+				"phone": "8526857001",
+				"summary": "To work hard with full determination and dedication to achieve organizational as well as personal goals",
+				"location": {
+					"address": "3 / 5,KRMS Garden,Sulur",
+					"postalCode": "641402",
+					"district": "coimbatore",
+					"state": "Tamil Nadu",
+					"country": "INDIA"
+				},
+
+				"work": [{
+						"name": "PEPS industries",
+						"position": "Asst supervisor",
+						"url": "https //:PEPSindustries.pvt.ltd.com",
+						"startDate": "14 - 04 - 2019",
+						"endDate": "07 - 07 - 2021",
+						"summary": "I was asst.supervisor in that company and I achieve my start from the company",
+						"education": [{
+							"institution": "Ambal Professional Group Of Institutions",
+							"area": "Engineering",
+							"studyType": "Bachelor Of Engineering",
+							"from": "2017",
+							"to": "2021",
+							"Grade": "6.5"
+
+						}],
+						"skills": [{
+							"name": "MS - office",
+							"level": "advanced",
+							"name": "designing - CATIA",
+							"level": "Basics"
+
+						}],
+						"languages": [{
+								"language": "English",
+								"fluency": "Read,Write and Speak",
+								"language": "Tamil",
+								"fluency": "Read,Write and Speak",
+								"language": "Malayalam",
+								"fluency": "Read,Write and Speak",
+								"language": "Hindi",
+								"fluency": "Speak"
+
+							},
+
+							{
+								"Aknowledgement": "I am here by declare the above given datails is true and best of my knowledge",
+								"date": "22/2/2022",
+								"place": "sulur"
+							}
+						]
+					}
+
+				}
+
+---------------------------------------------------------------------------------------------
+Window Object:
+
+     The window object represents a window in browser. An object of window is created automatically by the browser.
+     Window is the object of browser, it is not the object of javascript. The javascript objects are string, 
+	 array, date etc.
+
+	 
+          Method	    Description
+		 -------------------------- 
+          alert()	    displays the alert box containing message with ok button.
+          confirm()	    displays the confirm dialog box containing message with ok and cancel button.
+          prompt()   	displays a dialog box to get input from the user.
+          open()	    opens the new window.
+          close()    	closes the current window.
+          setTimeout()	performs action after specified time like calling function, evaluating expressions etc.
+
+--------------------------------------------------------------------------------------------------
+document object:
+     The document object represents your web page.
+     If you want to access any element in an HTML page, you always start with accessing the document object.
+     Below are some examples of how you can use the document object to access and manipulate HTML.		  
+
+	      Method	                            Description
+		  -------------------------------------------------------------------
+         document.getElementById(id)	        Find an element by element id
+         document.getElementsByTagName(name)	Find elements by tag name
+         document.getElementsByClassName(name)	Find elements by class name
+
+----------------------------------------------------------------------------------------------------		 
+screen object:
+      The JavaScript screen object holds information of browser screen. 
+	  It can be used to display screen width, height, colorDepth, pixelDepth etc.
+      The navigator object is the window property, so it can be accessed by:
+	        window.screen  
+
+			Property	         Description
+		   ------------------------------------------------
+	        width	       returns the width of the screen
+	        height	       returns the height of the screen
+	        availWidth	   returns the available width
+	        availHeight	   returns the available height
+	        colorDepth	   returns the color depth
+	        pixelDepth	   returns the pixel depth.
+
+-----------------------------------------------------------------------------------------------			
